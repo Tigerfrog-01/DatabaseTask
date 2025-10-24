@@ -15,5 +15,7 @@ namespace DatabaseTask.Core.Domain
         public string LastName { get; set; }
         public string DateOfBirth { get; set; }
 
+        public ICollection<KinderGarten> KinderGartens { get; set; }
+
     }
 }
