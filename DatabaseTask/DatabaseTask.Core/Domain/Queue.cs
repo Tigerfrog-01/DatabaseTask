@@ -7,12 +7,17 @@ using System.Threading.Tasks;
 
 namespace DatabaseTask.Core.Domain
 {
-    public class Que
+    public class Queue
     {
         [Key]
         public Guid Id { get; set; }
-        public string RegDate { get; set; }
-  
+        public DateTime RegDate { get; set; }
+        public IEnumerable<Child> Childs { get; set; }
+        = new List<Child>();
+
+        public IEnumerable<Groups> Groups { get; set; }
+        = new List<Groups>();
+
 
 
 

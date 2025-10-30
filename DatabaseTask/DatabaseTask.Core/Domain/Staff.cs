@@ -11,9 +11,9 @@ namespace DatabaseTask.Core.Domain
     {
         [Key]
         public Guid Id { get; set; }
-        public string StaffTitle { get; set; }
-        public string TotalStaff { get; set; }
-        public string Permission { get; set; }
+        public string StaffTitle { get; set; } = string.Empty;
+        public string TotalStaff { get; set; } = string.Empty ;
+        public string Permission { get; set; } = string.Empty;
 
 
     }

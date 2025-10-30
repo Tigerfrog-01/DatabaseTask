@@ -11,10 +11,12 @@ namespace DatabaseTask.Core.Domain
     {
         [Key]
         public Guid Id { get; set; }
-        public string Name { get; set; }
-        public string TotalChildren { get; set; }
-        public string GroupType { get; set; }
-        public string RoomNr { get; set; }
+        public int ChildCount { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Type { get; set; } = string.Empty;
+        public string RoomNr { get; set; } = string.Empty;
+
+ 
 
 
 
